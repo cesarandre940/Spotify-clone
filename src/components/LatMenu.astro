@@ -1,0 +1,31 @@
+---
+import CollapseIcon from "../icons/CollapseIcon.astro";
+import HomeIcon from "../icons/HomeIcon.astro";
+import LatMenuItem from "./LatMenuItem.astro";
+import SearchIcon from "../icons/SearchIcon.astro";
+---
+
+<nav class="flex flex-col flex-1 gap-2">
+  <div class="bg-zinc-900 rounded-lg p-2">
+    <ul>
+      <LatMenuItem href="/">
+        <HomeIcon />
+        Home
+      </LatMenuItem>
+
+      <LatMenuItem href="/#">
+        <SearchIcon />
+        Search
+      </LatMenuItem>
+    </ul>
+  </div>
+
+  <div class="bg-zinc-900 rounded-lg p-2">
+    <ul>
+      <LatMenuItem href="/">
+        <CollapseIcon/>
+        Your Libary
+      </LatMenuItem>
+    </ul>
+  </div>
+</nav>
